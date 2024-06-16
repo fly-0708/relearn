@@ -12,12 +12,41 @@
     /*
     * string
     *  -toString() 不会影响原变量
-    *  -
+    *   --null和undefiend 咩有toStrng() 方法
+    *  -string()
+    *   --Number和Boolean 实际上调用toString()方法
+    *   --null和undefined不会调用 toString()而是直接转写为‘null’ ‘undefined’
     *
+    * 
+    * number
+    *   使用number()
+    *       --字符串
+    *           --‘789’=>789
+    *           --' '=>0
+    *           --'z789'=>NaN
+    *      --Boolean···
+    *           true=>1
+    *           false=>0
+    * 
+    *      --null
+    *           null=>0
+    *                       
+    *      --undefined
+    *           undefied=>NaN
+    *  
+    * 
+    *   使用parseInt() 将字符串有效的整数转化为整数
+    *   使用parseFloat() 将字符串转化为整数
+    * 
+    *
+    * boolean
+    * 
+    * 
     * */
-
     let  num=12
     console.log(typeof num,num)//Number 12
 
+
 </script>
 </html>
+
